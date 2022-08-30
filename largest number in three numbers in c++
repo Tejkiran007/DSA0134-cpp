@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+ 
+inline int MAX(int x, int y, int z)
+{
+    return (x > y && x > z) ? x : (y > z ? y : z);
+}
+inline int MIN(int x, int y, int z)
+{
+    return (x < y && x < z) ? x : (y < z ? y : z);
+}
+ 
+int main()
+{
+    int a, b, c;
+    cout<<"Enter three numbers to check: "<<endl;
+    cin >> a >> b >> c;
+ 
+    cout << "Largest number of three numbers " << MAX(a, b, c) << endl;
+    
+ 
+    return 0;
+}
